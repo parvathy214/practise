@@ -18,8 +18,8 @@ app.use('/api',login)
 //hosting
 
 const path = require('path');
-app.use(express.static('./dist/frontend/'))
-app.get('/*', function(req, res) { res.sendFile(path.join(__dirname + '/dist/frontend/index.html')); });
+app.use(express.static('./dist/front/'))
+app.get('/*', function(req, res) { res.sendFile(path.join(__dirname + '/dist/front/index.html')); });
 
 app.listen(3000,()=>{
     console.log("server running at 3000");
